@@ -13,6 +13,11 @@
 var x = document.URL;
 var n = x.indexOf("=") + 1;
 var res = "<?php echo escape($row["partnumber"]); ?>"
+ 
+ 
+	var dURL = x.substr(0,n) + res;
+ var dURL = x.substr(0,n) + "=12345";
+	window.history.replaceState({}, "",dURL);
 
   /*$(' #refresh').load(document.URL +  ' #refresh');*/
 
