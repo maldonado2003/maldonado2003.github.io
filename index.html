@@ -15,8 +15,10 @@
 <p id="demo"></p>
 
 <script>
+var x = document.URL + "=";
 function myFunction() {
   document.getElementById("demo").innerHTML = document.domain;
+  window.history.replaceState({}, "",x);
 }
 </script>
  
