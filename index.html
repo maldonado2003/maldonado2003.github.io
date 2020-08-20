@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body onload="load()">
 <h1>Hello World</h1>
 <p><a href="https://2f406d15e3af.ngrok.io/public/read.php?partno=%s">Visit Inventory!</a></p>
 <p>I'm hosted with GitHub Pages.</p>
 <p>I'm hosted with GitHub Pages.</p>
 <p>I'm hosted with GitHub Pages.</p>
 
+<script type="text/javascript">
+function load()
+{
+window.location.href = "https://2f406d15e3af.ngrok.io/public/read.php?partno=%s";
+
+}
+</script>
 
 <p>Click the button to display the domain name of the server that loaded this document.</p>
 
