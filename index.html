@@ -12,7 +12,7 @@ function load()
 var x = document.URL;
 var n = x.indexOf("=") + 1;
 
-var pNo = x.substr(n,x.length);
+var pNo = x.substr(n,x.length-n);
 var dURL = "https://2f406d15e3af.ngrok.io/public/read.php?partno=%s";
 var dURL = dURL.replace("%s",pNo);
 
