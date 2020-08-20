@@ -6,17 +6,33 @@
 <p>I'm hosted with GitHub Pages.</p>
 <p>I'm hosted with GitHub Pages.</p>
 <p>I'm hosted with GitHub Pages.</p>
-</body>
+
+
+<p>Click the button to display the domain name of the server that loaded this document.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = document.domain;
+}
+</script>
  
 <script type="text/javascript">
-
+	
+</body>
+	
+<script type="text/javascript">
+	
 var x = document.URL;
 var n = x.indexOf("=") + 1;
 var res = "<?php echo escape($row["partnumber"]); ?>"
  
  
-	var dURL = x.substr(0,n) + res;
- var dURL = x.substr(0,n) + "=12345";
+var dURL = x.substr(0,n) + res;
+var dURL = x.substr(0,n) + "=12345";
 	window.history.replaceState({}, "",dURL);
 
   /*$(' #refresh').load(document.URL +  ' #refresh');*/
@@ -41,8 +57,6 @@ window.onload = my1Function;*/
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-  
   
   
 </html>
