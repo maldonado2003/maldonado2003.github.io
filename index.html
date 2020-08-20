@@ -14,7 +14,7 @@ var x = document.URL;
 var n = x.indexOf("=") + 1;
 
 var pNo = x.substr(n,x.length-n);
-var dURL = "C:\Users\JOSE\Documents\GitHub\maldonado2003.github.io";
+var dURL = "https://c00759b410a5.ngrok.io/public/read.php?partno=%s";
 var dURL = dURL.replace("%s",pNo);
 
 window.location.href = dURL;
